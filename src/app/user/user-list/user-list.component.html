@@ -1,1 +1,6 @@
-<p>user-list works!</p>
+<h2>Lista User</h2>
+<ul>
+    <li *ngFor="let user of users">
+        <a routerLink="['/users/:id', user.id]">{{ user.Name }}</a>
+    </li>
+</ul>
